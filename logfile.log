@@ -1,0 +1,866 @@
+2023-05-29 11:49:24,596 DEBUG: Executing query 1
+2023-05-29 11:49:24,596 DEBUG: ===================================
+2023-05-29 11:49:24,596 DEBUG: User provided connection arguments
+2023-05-29 11:49:24,597 DEBUG: ===================================
+2023-05-29 11:49:24,598 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-29 11:49:24,599 DEBUG: ===================================
+2023-05-29 11:49:24,599 DEBUG: ===================================
+2023-05-29 11:49:24,599 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-29 11:49:24,599 DEBUG: ===================================
+2023-05-29 11:49:24,599 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-29 11:49:24,599 DEBUG: ===================================
+2023-05-29 11:49:24,599 DEBUG: Cursor.paramstyle=named
+2023-05-29 11:49:24,739 DEBUG: ===================================
+2023-05-29 11:49:24,739 DEBUG: Establishing a connection
+2023-05-29 11:49:24,739 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-29 11:49:24,739 DEBUG: ===================================
+2023-05-29 11:49:26,056 DEBUG: Cursor.paramstyle=format
+2023-05-29 11:49:26,056 DEBUG: Sending start-up message
+2023-05-29 11:49:26,353 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-29 11:49:26,353 DEBUG: Algo:0
+2023-05-29 11:49:26,368 DEBUG: Password(extensible digest)
+2023-05-29 11:49:26,658 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-29 11:49:26,659 DEBUG: Cursor.paramstyle=format
+2023-05-29 11:51:18,407 DEBUG: Executing query 1
+2023-05-29 11:51:18,407 DEBUG: ===================================
+2023-05-29 11:51:18,408 DEBUG: User provided connection arguments
+2023-05-29 11:51:18,408 DEBUG: ===================================
+2023-05-29 11:51:18,411 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-29 11:51:18,411 DEBUG: ===================================
+2023-05-29 11:51:18,411 DEBUG: ===================================
+2023-05-29 11:51:18,412 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-29 11:51:18,412 DEBUG: ===================================
+2023-05-29 11:51:18,413 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-29 11:51:18,413 DEBUG: ===================================
+2023-05-29 11:51:18,413 DEBUG: Cursor.paramstyle=named
+2023-05-29 11:51:18,574 DEBUG: ===================================
+2023-05-29 11:51:18,574 DEBUG: Establishing a connection
+2023-05-29 11:51:18,575 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-29 11:51:18,575 DEBUG: ===================================
+2023-05-29 11:51:19,813 DEBUG: Cursor.paramstyle=format
+2023-05-29 11:51:19,813 DEBUG: Sending start-up message
+2023-05-29 11:51:20,120 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-29 11:51:20,120 DEBUG: Algo:0
+2023-05-29 11:51:20,121 DEBUG: Password(extensible digest)
+2023-05-29 11:51:20,426 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-29 11:51:20,426 DEBUG: Cursor.paramstyle=format
+2023-05-30 17:53:10,772 DEBUG: Executing query 1
+2023-05-30 17:53:10,772 DEBUG: ===================================
+2023-05-30 17:53:10,772 DEBUG: User provided connection arguments
+2023-05-30 17:53:10,772 DEBUG: ===================================
+2023-05-30 17:53:10,773 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 17:53:10,773 DEBUG: ===================================
+2023-05-30 17:53:10,773 DEBUG: ===================================
+2023-05-30 17:53:10,773 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 17:53:10,773 DEBUG: ===================================
+2023-05-30 17:53:10,773 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 17:53:10,773 DEBUG: ===================================
+2023-05-30 17:53:10,774 DEBUG: Cursor.paramstyle=named
+2023-05-30 17:53:10,875 DEBUG: ===================================
+2023-05-30 17:53:10,875 DEBUG: Establishing a connection
+2023-05-30 17:53:10,875 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 17:53:10,875 DEBUG: ===================================
+2023-05-30 17:53:12,432 DEBUG: Cursor.paramstyle=format
+2023-05-30 17:53:12,432 DEBUG: Sending start-up message
+2023-05-30 17:53:12,612 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 17:53:12,612 DEBUG: Algo:0
+2023-05-30 17:53:12,623 DEBUG: Password(extensible digest)
+2023-05-30 17:53:12,807 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 17:53:12,807 DEBUG: Cursor.paramstyle=format
+2023-05-30 17:53:20,938 DEBUG: Query 1 execution completed
+2023-05-30 17:53:20,938 DEBUG: Executing query 2
+2023-05-30 17:53:20,938 DEBUG: ===================================
+2023-05-30 17:53:20,938 DEBUG: User provided connection arguments
+2023-05-30 17:53:20,938 DEBUG: ===================================
+2023-05-30 17:53:20,938 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 17:53:20,938 DEBUG: ===================================
+2023-05-30 17:53:20,938 DEBUG: ===================================
+2023-05-30 17:53:20,938 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 17:53:20,938 DEBUG: ===================================
+2023-05-30 17:53:20,938 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 17:53:20,938 DEBUG: ===================================
+2023-05-30 17:53:20,938 DEBUG: Cursor.paramstyle=named
+2023-05-30 17:53:20,939 DEBUG: ===================================
+2023-05-30 17:53:20,939 DEBUG: Establishing a connection
+2023-05-30 17:53:20,939 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 17:53:20,939 DEBUG: ===================================
+2023-05-30 17:53:21,646 DEBUG: Cursor.paramstyle=format
+2023-05-30 17:53:21,646 DEBUG: Sending start-up message
+2023-05-30 17:53:21,827 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 17:53:21,827 DEBUG: Algo:0
+2023-05-30 17:53:21,827 DEBUG: Password(extensible digest)
+2023-05-30 17:53:22,008 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 17:53:22,008 DEBUG: Cursor.paramstyle=format
+2023-05-30 17:53:38,467 DEBUG: Query 2 execution completed
+2023-05-30 17:53:38,468 DEBUG: Executing query 3
+2023-05-30 17:53:38,468 DEBUG: ===================================
+2023-05-30 17:53:38,468 DEBUG: User provided connection arguments
+2023-05-30 17:53:38,468 DEBUG: ===================================
+2023-05-30 17:53:38,468 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 17:53:38,468 DEBUG: ===================================
+2023-05-30 17:53:38,468 DEBUG: ===================================
+2023-05-30 17:53:38,468 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 17:53:38,468 DEBUG: ===================================
+2023-05-30 17:53:38,468 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 17:53:38,468 DEBUG: ===================================
+2023-05-30 17:53:38,468 DEBUG: Cursor.paramstyle=named
+2023-05-30 17:53:38,470 DEBUG: ===================================
+2023-05-30 17:53:38,470 DEBUG: Establishing a connection
+2023-05-30 17:53:38,470 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 17:53:38,470 DEBUG: ===================================
+2023-05-30 17:53:39,203 DEBUG: Cursor.paramstyle=format
+2023-05-30 17:53:39,203 DEBUG: Sending start-up message
+2023-05-30 17:53:39,382 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 17:53:39,382 DEBUG: Algo:0
+2023-05-30 17:53:39,382 DEBUG: Password(extensible digest)
+2023-05-30 17:53:39,568 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 17:53:39,568 DEBUG: Cursor.paramstyle=format
+2023-05-30 17:53:41,043 DEBUG: Query 3 execution completed
+2023-05-30 17:57:41,695 DEBUG: Executing query 1
+2023-05-30 17:57:41,695 DEBUG: ===================================
+2023-05-30 17:57:41,695 DEBUG: User provided connection arguments
+2023-05-30 17:57:41,695 DEBUG: ===================================
+2023-05-30 17:57:41,696 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 17:57:41,697 DEBUG: ===================================
+2023-05-30 17:57:41,697 DEBUG: ===================================
+2023-05-30 17:57:41,697 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 17:57:41,697 DEBUG: ===================================
+2023-05-30 17:57:41,697 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 17:57:41,697 DEBUG: ===================================
+2023-05-30 17:57:41,697 DEBUG: Cursor.paramstyle=named
+2023-05-30 17:57:41,788 DEBUG: ===================================
+2023-05-30 17:57:41,788 DEBUG: Establishing a connection
+2023-05-30 17:57:41,788 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 17:57:41,788 DEBUG: ===================================
+2023-05-30 17:57:42,862 DEBUG: Cursor.paramstyle=format
+2023-05-30 17:57:42,862 DEBUG: Sending start-up message
+2023-05-30 17:57:43,052 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 17:57:43,052 DEBUG: Algo:0
+2023-05-30 17:57:43,052 DEBUG: Password(extensible digest)
+2023-05-30 17:57:43,252 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 17:57:43,252 DEBUG: Cursor.paramstyle=format
+2023-05-30 18:00:00,123 DEBUG: Executing query 1
+2023-05-30 18:00:00,123 DEBUG: ===================================
+2023-05-30 18:00:00,123 DEBUG: User provided connection arguments
+2023-05-30 18:00:00,123 DEBUG: ===================================
+2023-05-30 18:00:00,126 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 18:00:00,126 DEBUG: ===================================
+2023-05-30 18:00:00,126 DEBUG: ===================================
+2023-05-30 18:00:00,126 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 18:00:00,126 DEBUG: ===================================
+2023-05-30 18:00:00,126 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 18:00:00,126 DEBUG: ===================================
+2023-05-30 18:00:00,126 DEBUG: Cursor.paramstyle=named
+2023-05-30 18:00:00,207 DEBUG: ===================================
+2023-05-30 18:00:00,207 DEBUG: Establishing a connection
+2023-05-30 18:00:00,207 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 18:00:00,207 DEBUG: ===================================
+2023-05-30 18:00:01,741 DEBUG: Cursor.paramstyle=format
+2023-05-30 18:00:01,741 DEBUG: Sending start-up message
+2023-05-30 18:00:01,924 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 18:00:01,924 DEBUG: Algo:0
+2023-05-30 18:00:01,924 DEBUG: Password(extensible digest)
+2023-05-30 18:00:02,117 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 18:00:02,117 DEBUG: Cursor.paramstyle=format
+2023-05-30 18:00:12,136 DEBUG: Query 1 execution completed
+2023-05-30 18:00:12,137 DEBUG: Executing query 2
+2023-05-30 18:00:12,137 DEBUG: ===================================
+2023-05-30 18:00:12,137 DEBUG: User provided connection arguments
+2023-05-30 18:00:12,137 DEBUG: ===================================
+2023-05-30 18:00:12,137 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 18:00:12,137 DEBUG: ===================================
+2023-05-30 18:00:12,138 DEBUG: ===================================
+2023-05-30 18:00:12,138 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 18:00:12,138 DEBUG: ===================================
+2023-05-30 18:00:12,138 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 18:00:12,138 DEBUG: ===================================
+2023-05-30 18:00:12,138 DEBUG: Cursor.paramstyle=named
+2023-05-30 18:00:12,140 DEBUG: ===================================
+2023-05-30 18:00:12,140 DEBUG: Establishing a connection
+2023-05-30 18:00:12,140 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 18:00:12,140 DEBUG: ===================================
+2023-05-30 18:00:12,845 DEBUG: Cursor.paramstyle=format
+2023-05-30 18:00:12,845 DEBUG: Sending start-up message
+2023-05-30 18:00:13,018 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 18:00:13,018 DEBUG: Algo:0
+2023-05-30 18:00:13,018 DEBUG: Password(extensible digest)
+2023-05-30 18:00:13,205 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 18:00:13,205 DEBUG: Cursor.paramstyle=format
+2023-05-30 18:00:22,004 DEBUG: Query 2 execution completed
+2023-05-30 18:00:22,005 DEBUG: Executing query 3
+2023-05-30 18:00:22,005 DEBUG: ===================================
+2023-05-30 18:00:22,005 DEBUG: User provided connection arguments
+2023-05-30 18:00:22,005 DEBUG: ===================================
+2023-05-30 18:00:22,005 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 18:00:22,005 DEBUG: ===================================
+2023-05-30 18:00:22,005 DEBUG: ===================================
+2023-05-30 18:00:22,005 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 18:00:22,005 DEBUG: ===================================
+2023-05-30 18:00:22,005 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 18:00:22,005 DEBUG: ===================================
+2023-05-30 18:00:22,005 DEBUG: Cursor.paramstyle=named
+2023-05-30 18:00:22,007 DEBUG: ===================================
+2023-05-30 18:00:22,007 DEBUG: Establishing a connection
+2023-05-30 18:00:22,007 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 18:00:22,007 DEBUG: ===================================
+2023-05-30 18:00:22,767 DEBUG: Cursor.paramstyle=format
+2023-05-30 18:00:22,768 DEBUG: Sending start-up message
+2023-05-30 18:00:22,954 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 18:00:22,954 DEBUG: Algo:0
+2023-05-30 18:00:22,954 DEBUG: Password(extensible digest)
+2023-05-30 18:00:23,149 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 18:00:23,149 DEBUG: Cursor.paramstyle=format
+2023-05-30 18:00:24,986 DEBUG: Query 3 execution completed
+2023-05-30 22:07:45,095 DEBUG: Executing query 1
+2023-05-30 22:07:45,095 DEBUG: ===================================
+2023-05-30 22:07:45,095 DEBUG: User provided connection arguments
+2023-05-30 22:07:45,096 DEBUG: ===================================
+2023-05-30 22:07:45,097 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 22:07:45,098 DEBUG: ===================================
+2023-05-30 22:07:45,098 DEBUG: ===================================
+2023-05-30 22:07:45,098 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 22:07:45,098 DEBUG: ===================================
+2023-05-30 22:07:45,098 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 22:07:45,098 DEBUG: ===================================
+2023-05-30 22:07:45,098 DEBUG: Cursor.paramstyle=named
+2023-05-30 22:07:45,281 DEBUG: ===================================
+2023-05-30 22:07:45,282 DEBUG: Establishing a connection
+2023-05-30 22:07:45,282 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 22:07:45,282 DEBUG: ===================================
+2023-05-30 22:07:46,250 DEBUG: Cursor.paramstyle=format
+2023-05-30 22:07:46,250 DEBUG: Sending start-up message
+2023-05-30 22:07:46,426 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 22:07:46,427 DEBUG: Algo:0
+2023-05-30 22:07:46,428 DEBUG: Password(extensible digest)
+2023-05-30 22:07:46,610 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 22:07:46,611 DEBUG: Cursor.paramstyle=format
+2023-05-30 22:07:51,994 DEBUG: Query 1 execution completed
+2023-05-30 22:07:51,994 DEBUG: Executing query 2
+2023-05-30 22:07:51,994 DEBUG: ===================================
+2023-05-30 22:07:51,995 DEBUG: User provided connection arguments
+2023-05-30 22:07:51,995 DEBUG: ===================================
+2023-05-30 22:07:51,995 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 22:07:51,995 DEBUG: ===================================
+2023-05-30 22:07:51,995 DEBUG: ===================================
+2023-05-30 22:07:51,995 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 22:07:51,996 DEBUG: ===================================
+2023-05-30 22:07:51,996 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 22:07:51,996 DEBUG: ===================================
+2023-05-30 22:07:51,996 DEBUG: Cursor.paramstyle=named
+2023-05-30 22:07:51,999 DEBUG: ===================================
+2023-05-30 22:07:51,999 DEBUG: Establishing a connection
+2023-05-30 22:07:51,999 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 22:07:51,999 DEBUG: ===================================
+2023-05-30 22:07:52,805 DEBUG: Cursor.paramstyle=format
+2023-05-30 22:07:52,805 DEBUG: Sending start-up message
+2023-05-30 22:07:52,996 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 22:07:52,996 DEBUG: Algo:0
+2023-05-30 22:07:52,996 DEBUG: Password(extensible digest)
+2023-05-30 22:07:53,194 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 22:07:53,195 DEBUG: Cursor.paramstyle=format
+2023-05-30 22:08:15,547 DEBUG: Executing query 1
+2023-05-30 22:08:15,549 DEBUG: ===================================
+2023-05-30 22:08:15,549 DEBUG: User provided connection arguments
+2023-05-30 22:08:15,549 DEBUG: ===================================
+2023-05-30 22:08:15,549 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 22:08:15,550 DEBUG: ===================================
+2023-05-30 22:08:15,550 DEBUG: ===================================
+2023-05-30 22:08:15,550 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 22:08:15,550 DEBUG: ===================================
+2023-05-30 22:08:15,550 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 22:08:15,550 DEBUG: ===================================
+2023-05-30 22:08:15,550 DEBUG: Cursor.paramstyle=named
+2023-05-30 22:08:15,670 DEBUG: ===================================
+2023-05-30 22:08:15,670 DEBUG: Establishing a connection
+2023-05-30 22:08:15,670 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 22:08:15,670 DEBUG: ===================================
+2023-05-30 22:08:16,477 DEBUG: Cursor.paramstyle=format
+2023-05-30 22:08:16,478 DEBUG: Sending start-up message
+2023-05-30 22:08:16,653 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 22:08:16,653 DEBUG: Algo:0
+2023-05-30 22:08:16,654 DEBUG: Password(extensible digest)
+2023-05-30 22:08:16,838 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 22:08:16,838 DEBUG: Cursor.paramstyle=format
+2023-05-30 22:08:18,116 DEBUG: Query 1 execution completed
+2023-05-30 22:08:18,116 DEBUG: Executing query 2
+2023-05-30 22:08:18,117 DEBUG: ===================================
+2023-05-30 22:08:18,117 DEBUG: User provided connection arguments
+2023-05-30 22:08:18,117 DEBUG: ===================================
+2023-05-30 22:08:18,117 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 22:08:18,117 DEBUG: ===================================
+2023-05-30 22:08:18,117 DEBUG: ===================================
+2023-05-30 22:08:18,117 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 22:08:18,118 DEBUG: ===================================
+2023-05-30 22:08:18,118 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 22:08:18,118 DEBUG: ===================================
+2023-05-30 22:08:18,119 DEBUG: Cursor.paramstyle=named
+2023-05-30 22:08:18,123 DEBUG: ===================================
+2023-05-30 22:08:18,123 DEBUG: Establishing a connection
+2023-05-30 22:08:18,123 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 22:08:18,123 DEBUG: ===================================
+2023-05-30 22:08:18,890 DEBUG: Cursor.paramstyle=format
+2023-05-30 22:08:18,890 DEBUG: Sending start-up message
+2023-05-30 22:08:19,068 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 22:08:19,068 DEBUG: Algo:0
+2023-05-30 22:08:19,068 DEBUG: Password(extensible digest)
+2023-05-30 22:08:19,251 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 22:08:19,253 DEBUG: Cursor.paramstyle=format
+2023-05-30 22:08:56,826 DEBUG: Query 2 execution completed
+2023-05-30 22:08:56,827 DEBUG: Executing query 3
+2023-05-30 22:08:56,827 DEBUG: ===================================
+2023-05-30 22:08:56,827 DEBUG: User provided connection arguments
+2023-05-30 22:08:56,827 DEBUG: ===================================
+2023-05-30 22:08:56,828 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 22:08:56,828 DEBUG: ===================================
+2023-05-30 22:08:56,828 DEBUG: ===================================
+2023-05-30 22:08:56,829 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-05-30 22:08:56,829 DEBUG: ===================================
+2023-05-30 22:08:56,830 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-05-30 22:08:56,830 DEBUG: ===================================
+2023-05-30 22:08:56,830 DEBUG: Cursor.paramstyle=named
+2023-05-30 22:08:56,837 DEBUG: ===================================
+2023-05-30 22:08:56,837 DEBUG: Establishing a connection
+2023-05-30 22:08:56,838 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-05-30 22:08:56,838 DEBUG: ===================================
+2023-05-30 22:08:58,294 DEBUG: Cursor.paramstyle=format
+2023-05-30 22:08:58,294 DEBUG: Sending start-up message
+2023-05-30 22:08:58,471 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-05-30 22:08:58,472 DEBUG: Algo:0
+2023-05-30 22:08:58,472 DEBUG: Password(extensible digest)
+2023-05-30 22:08:58,653 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-05-30 22:08:58,653 DEBUG: Cursor.paramstyle=format
+2023-05-30 22:09:00,065 DEBUG: Query 3 execution completed
+2023-06-13 22:47:40,723 DEBUG: Executing query create temp0
+2023-06-13 22:47:40,724 DEBUG: ===================================
+2023-06-13 22:47:40,724 DEBUG: User provided connection arguments
+2023-06-13 22:47:40,724 DEBUG: ===================================
+2023-06-13 22:47:40,725 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 22:47:40,725 DEBUG: ===================================
+2023-06-13 22:47:40,725 DEBUG: ===================================
+2023-06-13 22:47:40,725 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 22:47:40,725 DEBUG: ===================================
+2023-06-13 22:47:40,725 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 22:47:40,725 DEBUG: ===================================
+2023-06-13 22:47:40,725 DEBUG: Cursor.paramstyle=named
+2023-06-13 22:47:40,801 DEBUG: ===================================
+2023-06-13 22:47:40,801 DEBUG: Establishing a connection
+2023-06-13 22:47:40,801 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 22:47:40,801 DEBUG: ===================================
+2023-06-13 22:47:41,925 DEBUG: Cursor.paramstyle=format
+2023-06-13 22:47:41,925 DEBUG: Sending start-up message
+2023-06-13 22:47:42,098 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 22:47:42,099 DEBUG: Algo:0
+2023-06-13 22:47:42,111 DEBUG: Password(extensible digest)
+2023-06-13 22:47:42,289 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 22:47:42,289 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:00:05,889 DEBUG: Executing query create temp0
+2023-06-13 23:00:05,889 DEBUG: ===================================
+2023-06-13 23:00:05,889 DEBUG: User provided connection arguments
+2023-06-13 23:00:05,889 DEBUG: ===================================
+2023-06-13 23:00:05,890 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:00:05,890 DEBUG: ===================================
+2023-06-13 23:00:05,891 DEBUG: ===================================
+2023-06-13 23:00:05,891 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:00:05,891 DEBUG: ===================================
+2023-06-13 23:00:05,891 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:00:05,891 DEBUG: ===================================
+2023-06-13 23:00:05,891 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:00:05,967 DEBUG: ===================================
+2023-06-13 23:00:05,967 DEBUG: Establishing a connection
+2023-06-13 23:00:05,967 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:00:05,967 DEBUG: ===================================
+2023-06-13 23:00:06,733 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:00:06,733 DEBUG: Sending start-up message
+2023-06-13 23:00:06,924 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:00:06,924 DEBUG: Algo:0
+2023-06-13 23:00:06,924 DEBUG: Password(extensible digest)
+2023-06-13 23:00:07,125 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:00:07,126 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:00:19,199 DEBUG: Temp0 created successfully
+2023-06-13 23:00:19,200 DEBUG: Executing query update daily token
+2023-06-13 23:00:19,200 DEBUG: ===================================
+2023-06-13 23:00:19,200 DEBUG: User provided connection arguments
+2023-06-13 23:00:19,200 DEBUG: ===================================
+2023-06-13 23:00:19,201 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:00:19,201 DEBUG: ===================================
+2023-06-13 23:00:19,201 DEBUG: ===================================
+2023-06-13 23:00:19,201 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:00:19,201 DEBUG: ===================================
+2023-06-13 23:00:19,202 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:00:19,202 DEBUG: ===================================
+2023-06-13 23:00:19,202 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:00:19,204 DEBUG: ===================================
+2023-06-13 23:00:19,204 DEBUG: Establishing a connection
+2023-06-13 23:00:19,204 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:00:19,204 DEBUG: ===================================
+2023-06-13 23:00:19,978 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:00:19,979 DEBUG: Sending start-up message
+2023-06-13 23:00:20,167 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:00:20,167 DEBUG: Algo:0
+2023-06-13 23:00:20,167 DEBUG: Password(extensible digest)
+2023-06-13 23:00:20,362 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:00:20,362 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:02:08,342 DEBUG: Executing query create temp0
+2023-06-13 23:02:08,342 DEBUG: ===================================
+2023-06-13 23:02:08,342 DEBUG: User provided connection arguments
+2023-06-13 23:02:08,342 DEBUG: ===================================
+2023-06-13 23:02:08,343 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:02:08,343 DEBUG: ===================================
+2023-06-13 23:02:08,343 DEBUG: ===================================
+2023-06-13 23:02:08,343 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:02:08,343 DEBUG: ===================================
+2023-06-13 23:02:08,344 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:02:08,344 DEBUG: ===================================
+2023-06-13 23:02:08,344 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:02:08,423 DEBUG: ===================================
+2023-06-13 23:02:08,423 DEBUG: Establishing a connection
+2023-06-13 23:02:08,423 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:02:08,423 DEBUG: ===================================
+2023-06-13 23:02:09,287 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:02:09,287 DEBUG: Sending start-up message
+2023-06-13 23:02:09,490 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:02:09,490 DEBUG: Algo:0
+2023-06-13 23:02:09,491 DEBUG: Password(extensible digest)
+2023-06-13 23:02:09,700 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:02:09,700 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:03:00,858 DEBUG: Executing query create temp0
+2023-06-13 23:03:00,859 DEBUG: ===================================
+2023-06-13 23:03:00,859 DEBUG: User provided connection arguments
+2023-06-13 23:03:00,859 DEBUG: ===================================
+2023-06-13 23:03:00,860 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:03:00,860 DEBUG: ===================================
+2023-06-13 23:03:00,860 DEBUG: ===================================
+2023-06-13 23:03:00,860 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:03:00,860 DEBUG: ===================================
+2023-06-13 23:03:00,860 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:03:00,860 DEBUG: ===================================
+2023-06-13 23:03:00,860 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:03:00,942 DEBUG: ===================================
+2023-06-13 23:03:00,942 DEBUG: Establishing a connection
+2023-06-13 23:03:00,942 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:03:00,942 DEBUG: ===================================
+2023-06-13 23:03:01,674 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:03:01,674 DEBUG: Sending start-up message
+2023-06-13 23:03:01,849 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:03:01,849 DEBUG: Algo:0
+2023-06-13 23:03:01,849 DEBUG: Password(extensible digest)
+2023-06-13 23:03:02,033 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:03:02,033 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:04:21,552 DEBUG: Executing query create temp0
+2023-06-13 23:04:21,552 DEBUG: ===================================
+2023-06-13 23:04:21,552 DEBUG: User provided connection arguments
+2023-06-13 23:04:21,552 DEBUG: ===================================
+2023-06-13 23:04:21,553 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:04:21,553 DEBUG: ===================================
+2023-06-13 23:04:21,553 DEBUG: ===================================
+2023-06-13 23:04:21,553 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:04:21,553 DEBUG: ===================================
+2023-06-13 23:04:21,553 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:04:21,553 DEBUG: ===================================
+2023-06-13 23:04:21,553 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:04:21,634 DEBUG: ===================================
+2023-06-13 23:04:21,634 DEBUG: Establishing a connection
+2023-06-13 23:04:21,634 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:04:21,634 DEBUG: ===================================
+2023-06-13 23:04:22,407 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:04:22,407 DEBUG: Sending start-up message
+2023-06-13 23:04:22,627 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:04:22,628 DEBUG: Algo:0
+2023-06-13 23:04:22,629 DEBUG: Password(extensible digest)
+2023-06-13 23:04:22,820 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:04:22,820 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:04:34,139 DEBUG: Temp0 created successfully
+2023-06-13 23:04:34,139 DEBUG: Executing query update daily token
+2023-06-13 23:04:34,139 DEBUG: ===================================
+2023-06-13 23:04:34,139 DEBUG: User provided connection arguments
+2023-06-13 23:04:34,139 DEBUG: ===================================
+2023-06-13 23:04:34,139 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:04:34,139 DEBUG: ===================================
+2023-06-13 23:04:34,139 DEBUG: ===================================
+2023-06-13 23:04:34,139 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:04:34,139 DEBUG: ===================================
+2023-06-13 23:04:34,140 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:04:34,140 DEBUG: ===================================
+2023-06-13 23:04:34,140 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:04:34,140 DEBUG: ===================================
+2023-06-13 23:04:34,141 DEBUG: Establishing a connection
+2023-06-13 23:04:34,141 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:04:34,141 DEBUG: ===================================
+2023-06-13 23:04:34,949 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:04:34,949 DEBUG: Sending start-up message
+2023-06-13 23:04:35,138 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:04:35,138 DEBUG: Algo:0
+2023-06-13 23:04:35,138 DEBUG: Password(extensible digest)
+2023-06-13 23:04:35,329 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:04:35,329 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:07:20,663 DEBUG: Executing query create temp0
+2023-06-13 23:07:20,663 DEBUG: ===================================
+2023-06-13 23:07:20,663 DEBUG: User provided connection arguments
+2023-06-13 23:07:20,663 DEBUG: ===================================
+2023-06-13 23:07:20,665 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:07:20,665 DEBUG: ===================================
+2023-06-13 23:07:20,665 DEBUG: ===================================
+2023-06-13 23:07:20,665 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:07:20,665 DEBUG: ===================================
+2023-06-13 23:07:20,665 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:07:20,665 DEBUG: ===================================
+2023-06-13 23:07:20,665 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:07:20,745 DEBUG: ===================================
+2023-06-13 23:07:20,745 DEBUG: Establishing a connection
+2023-06-13 23:07:20,745 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:07:20,745 DEBUG: ===================================
+2023-06-13 23:07:21,515 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:07:21,515 DEBUG: Sending start-up message
+2023-06-13 23:07:21,695 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:07:21,695 DEBUG: Algo:0
+2023-06-13 23:07:21,695 DEBUG: Password(extensible digest)
+2023-06-13 23:07:21,883 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:07:21,883 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:07:33,406 DEBUG: Temp0 created successfully
+2023-06-13 23:07:33,406 DEBUG: Executing query update daily token
+2023-06-13 23:07:33,407 DEBUG: ===================================
+2023-06-13 23:07:33,407 DEBUG: User provided connection arguments
+2023-06-13 23:07:33,407 DEBUG: ===================================
+2023-06-13 23:07:33,407 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:07:33,407 DEBUG: ===================================
+2023-06-13 23:07:33,407 DEBUG: ===================================
+2023-06-13 23:07:33,407 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:07:33,407 DEBUG: ===================================
+2023-06-13 23:07:33,407 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:07:33,408 DEBUG: ===================================
+2023-06-13 23:07:33,408 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:07:33,409 DEBUG: ===================================
+2023-06-13 23:07:33,409 DEBUG: Establishing a connection
+2023-06-13 23:07:33,409 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:07:33,409 DEBUG: ===================================
+2023-06-13 23:07:34,141 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:07:34,141 DEBUG: Sending start-up message
+2023-06-13 23:07:34,320 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:07:34,320 DEBUG: Algo:0
+2023-06-13 23:07:34,320 DEBUG: Password(extensible digest)
+2023-06-13 23:07:34,506 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:07:34,506 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:07:52,528 DEBUG: Executing query create temp0
+2023-06-13 23:07:52,528 DEBUG: ===================================
+2023-06-13 23:07:52,528 DEBUG: User provided connection arguments
+2023-06-13 23:07:52,528 DEBUG: ===================================
+2023-06-13 23:07:52,529 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:07:52,529 DEBUG: ===================================
+2023-06-13 23:07:52,529 DEBUG: ===================================
+2023-06-13 23:07:52,529 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:07:52,529 DEBUG: ===================================
+2023-06-13 23:07:52,531 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:07:52,531 DEBUG: ===================================
+2023-06-13 23:07:52,531 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:07:52,607 DEBUG: ===================================
+2023-06-13 23:07:52,607 DEBUG: Establishing a connection
+2023-06-13 23:07:52,607 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:07:52,607 DEBUG: ===================================
+2023-06-13 23:07:53,316 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:07:53,316 DEBUG: Sending start-up message
+2023-06-13 23:07:53,488 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:07:53,488 DEBUG: Algo:0
+2023-06-13 23:07:53,489 DEBUG: Password(extensible digest)
+2023-06-13 23:07:53,665 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:07:53,666 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:08:05,938 DEBUG: Temp0 created successfully
+2023-06-13 23:08:05,939 DEBUG: Executing query update daily token
+2023-06-13 23:08:05,939 DEBUG: ===================================
+2023-06-13 23:08:05,939 DEBUG: User provided connection arguments
+2023-06-13 23:08:05,939 DEBUG: ===================================
+2023-06-13 23:08:05,939 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:08:05,939 DEBUG: ===================================
+2023-06-13 23:08:05,940 DEBUG: ===================================
+2023-06-13 23:08:05,940 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:08:05,940 DEBUG: ===================================
+2023-06-13 23:08:05,940 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:08:05,940 DEBUG: ===================================
+2023-06-13 23:08:05,940 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:08:05,942 DEBUG: ===================================
+2023-06-13 23:08:05,942 DEBUG: Establishing a connection
+2023-06-13 23:08:05,942 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:08:05,942 DEBUG: ===================================
+2023-06-13 23:08:06,674 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:08:06,674 DEBUG: Sending start-up message
+2023-06-13 23:08:06,855 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:08:06,855 DEBUG: Algo:0
+2023-06-13 23:08:06,855 DEBUG: Password(extensible digest)
+2023-06-13 23:08:07,040 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:08:07,041 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:08:23,651 DEBUG: ===================================
+2023-06-13 23:08:23,651 DEBUG: User provided connection arguments
+2023-06-13 23:08:23,651 DEBUG: ===================================
+2023-06-13 23:08:23,651 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:08:23,651 DEBUG: ===================================
+2023-06-13 23:08:23,651 DEBUG: ===================================
+2023-06-13 23:08:23,651 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:08:23,651 DEBUG: ===================================
+2023-06-13 23:08:23,651 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:08:23,651 DEBUG: ===================================
+2023-06-13 23:08:23,652 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:08:23,653 DEBUG: ===================================
+2023-06-13 23:08:23,654 DEBUG: Establishing a connection
+2023-06-13 23:08:23,654 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:08:23,654 DEBUG: ===================================
+2023-06-13 23:08:24,511 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:08:24,511 DEBUG: Sending start-up message
+2023-06-13 23:08:24,712 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:08:24,712 DEBUG: Algo:0
+2023-06-13 23:08:24,712 DEBUG: Password(extensible digest)
+2023-06-13 23:08:24,917 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:08:24,917 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:08:43,599 DEBUG: Updtaion of transfer_event_daily_token_balance by temp0 completed
+2023-06-13 23:08:43,599 DEBUG: Executing query updation of token balance at t
+2023-06-13 23:08:43,600 DEBUG: ===================================
+2023-06-13 23:08:43,600 DEBUG: User provided connection arguments
+2023-06-13 23:08:43,600 DEBUG: ===================================
+2023-06-13 23:08:43,600 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:08:43,600 DEBUG: ===================================
+2023-06-13 23:08:43,600 DEBUG: ===================================
+2023-06-13 23:08:43,600 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:08:43,600 DEBUG: ===================================
+2023-06-13 23:08:43,601 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:08:43,601 DEBUG: ===================================
+2023-06-13 23:08:43,601 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:08:43,602 DEBUG: ===================================
+2023-06-13 23:08:43,602 DEBUG: Establishing a connection
+2023-06-13 23:08:43,603 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:08:43,603 DEBUG: ===================================
+2023-06-13 23:08:44,382 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:08:44,383 DEBUG: Sending start-up message
+2023-06-13 23:08:44,572 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:08:44,572 DEBUG: Algo:0
+2023-06-13 23:08:44,572 DEBUG: Password(extensible digest)
+2023-06-13 23:08:44,769 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:08:44,769 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:08:56,819 DEBUG: ===================================
+2023-06-13 23:08:56,820 DEBUG: User provided connection arguments
+2023-06-13 23:08:56,820 DEBUG: ===================================
+2023-06-13 23:08:56,820 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:08:56,820 DEBUG: ===================================
+2023-06-13 23:08:56,820 DEBUG: ===================================
+2023-06-13 23:08:56,820 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:08:56,820 DEBUG: ===================================
+2023-06-13 23:08:56,821 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:08:56,821 DEBUG: ===================================
+2023-06-13 23:08:56,821 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:08:56,823 DEBUG: ===================================
+2023-06-13 23:08:56,824 DEBUG: Establishing a connection
+2023-06-13 23:08:56,824 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:08:56,824 DEBUG: ===================================
+2023-06-13 23:08:57,563 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:08:57,564 DEBUG: Sending start-up message
+2023-06-13 23:08:57,735 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:08:57,735 DEBUG: Algo:0
+2023-06-13 23:08:57,735 DEBUG: Password(extensible digest)
+2023-06-13 23:08:57,914 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:08:57,915 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:11:59,044 DEBUG: Executing query create temp0
+2023-06-13 23:11:59,044 DEBUG: ===================================
+2023-06-13 23:11:59,045 DEBUG: User provided connection arguments
+2023-06-13 23:11:59,045 DEBUG: ===================================
+2023-06-13 23:11:59,048 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:11:59,048 DEBUG: ===================================
+2023-06-13 23:11:59,048 DEBUG: ===================================
+2023-06-13 23:11:59,048 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:11:59,048 DEBUG: ===================================
+2023-06-13 23:11:59,048 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:11:59,049 DEBUG: ===================================
+2023-06-13 23:11:59,049 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:11:59,229 DEBUG: ===================================
+2023-06-13 23:11:59,229 DEBUG: Establishing a connection
+2023-06-13 23:11:59,229 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:11:59,229 DEBUG: ===================================
+2023-06-13 23:12:00,074 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:12:00,074 DEBUG: Sending start-up message
+2023-06-13 23:12:00,259 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:12:00,259 DEBUG: Algo:0
+2023-06-13 23:12:00,261 DEBUG: Password(extensible digest)
+2023-06-13 23:12:00,450 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:12:00,451 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:12:12,142 DEBUG: Temp0 created successfully
+2023-06-13 23:12:12,143 DEBUG: Executing query update daily token
+2023-06-13 23:12:12,143 DEBUG: ===================================
+2023-06-13 23:12:12,143 DEBUG: User provided connection arguments
+2023-06-13 23:12:12,143 DEBUG: ===================================
+2023-06-13 23:12:12,143 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:12:12,143 DEBUG: ===================================
+2023-06-13 23:12:12,145 DEBUG: ===================================
+2023-06-13 23:12:12,145 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:12:12,145 DEBUG: ===================================
+2023-06-13 23:12:12,145 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:12:12,146 DEBUG: ===================================
+2023-06-13 23:12:12,146 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:12:12,149 DEBUG: ===================================
+2023-06-13 23:12:12,149 DEBUG: Establishing a connection
+2023-06-13 23:12:12,149 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:12:12,150 DEBUG: ===================================
+2023-06-13 23:12:13,026 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:12:13,026 DEBUG: Sending start-up message
+2023-06-13 23:12:13,224 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:12:13,224 DEBUG: Algo:0
+2023-06-13 23:12:13,224 DEBUG: Password(extensible digest)
+2023-06-13 23:12:13,434 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:12:13,434 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:12:33,791 DEBUG: ===================================
+2023-06-13 23:12:33,791 DEBUG: User provided connection arguments
+2023-06-13 23:12:33,791 DEBUG: ===================================
+2023-06-13 23:12:33,792 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:12:33,792 DEBUG: ===================================
+2023-06-13 23:12:33,792 DEBUG: ===================================
+2023-06-13 23:12:33,792 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:12:33,792 DEBUG: ===================================
+2023-06-13 23:12:33,792 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:12:33,792 DEBUG: ===================================
+2023-06-13 23:12:33,793 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:12:33,798 DEBUG: ===================================
+2023-06-13 23:12:33,798 DEBUG: Establishing a connection
+2023-06-13 23:12:33,798 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:12:33,798 DEBUG: ===================================
+2023-06-13 23:12:34,548 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:12:34,548 DEBUG: Sending start-up message
+2023-06-13 23:12:34,724 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:12:34,724 DEBUG: Algo:0
+2023-06-13 23:12:34,724 DEBUG: Password(extensible digest)
+2023-06-13 23:12:34,908 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:12:34,909 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:12:49,899 DEBUG: Updtaion of transfer_event_daily_token_balance by temp0 completed
+2023-06-13 23:12:49,899 DEBUG: Executing query updation of token balance at t
+2023-06-13 23:12:49,900 DEBUG: ===================================
+2023-06-13 23:12:49,900 DEBUG: User provided connection arguments
+2023-06-13 23:12:49,900 DEBUG: ===================================
+2023-06-13 23:12:49,900 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:12:49,901 DEBUG: ===================================
+2023-06-13 23:12:49,901 DEBUG: ===================================
+2023-06-13 23:12:49,901 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:12:49,901 DEBUG: ===================================
+2023-06-13 23:12:49,901 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:12:49,902 DEBUG: ===================================
+2023-06-13 23:12:49,902 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:12:49,904 DEBUG: ===================================
+2023-06-13 23:12:49,904 DEBUG: Establishing a connection
+2023-06-13 23:12:49,904 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:12:49,905 DEBUG: ===================================
+2023-06-13 23:12:51,177 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:12:51,177 DEBUG: Sending start-up message
+2023-06-13 23:12:51,384 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:12:51,384 DEBUG: Algo:0
+2023-06-13 23:12:51,384 DEBUG: Password(extensible digest)
+2023-06-13 23:12:51,589 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:12:51,589 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:13:04,043 DEBUG: ===================================
+2023-06-13 23:13:04,043 DEBUG: User provided connection arguments
+2023-06-13 23:13:04,043 DEBUG: ===================================
+2023-06-13 23:13:04,044 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:13:04,044 DEBUG: ===================================
+2023-06-13 23:13:04,045 DEBUG: ===================================
+2023-06-13 23:13:04,045 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:13:04,045 DEBUG: ===================================
+2023-06-13 23:13:04,045 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:13:04,046 DEBUG: ===================================
+2023-06-13 23:13:04,046 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:13:04,049 DEBUG: ===================================
+2023-06-13 23:13:04,049 DEBUG: Establishing a connection
+2023-06-13 23:13:04,049 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:13:04,049 DEBUG: ===================================
+2023-06-13 23:13:04,887 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:13:04,888 DEBUG: Sending start-up message
+2023-06-13 23:13:05,090 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:13:05,090 DEBUG: Algo:0
+2023-06-13 23:13:05,090 DEBUG: Password(extensible digest)
+2023-06-13 23:13:05,290 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:13:05,290 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:13:15,950 DEBUG: Updation of token balances at t by temp0 completed
+2023-06-13 23:13:15,950 DEBUG: Executing query to drop temp0
+2023-06-13 23:13:15,950 DEBUG: ===================================
+2023-06-13 23:13:15,951 DEBUG: User provided connection arguments
+2023-06-13 23:13:15,951 DEBUG: ===================================
+2023-06-13 23:13:15,951 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:13:15,951 DEBUG: ===================================
+2023-06-13 23:13:15,951 DEBUG: ===================================
+2023-06-13 23:13:15,952 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:13:15,952 DEBUG: ===================================
+2023-06-13 23:13:15,952 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:13:15,952 DEBUG: ===================================
+2023-06-13 23:13:15,952 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:13:15,957 DEBUG: ===================================
+2023-06-13 23:13:15,957 DEBUG: Establishing a connection
+2023-06-13 23:13:15,957 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:13:15,957 DEBUG: ===================================
+2023-06-13 23:13:16,820 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:13:16,820 DEBUG: Sending start-up message
+2023-06-13 23:13:17,048 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:13:17,049 DEBUG: Algo:0
+2023-06-13 23:13:17,049 DEBUG: Password(extensible digest)
+2023-06-13 23:13:17,272 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:13:17,273 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:13:18,612 DEBUG: Temp0 dropped
+2023-06-13 23:13:18,612 DEBUG: Executing query for timestamp
+2023-06-13 23:13:18,613 DEBUG: ===================================
+2023-06-13 23:13:18,613 DEBUG: User provided connection arguments
+2023-06-13 23:13:18,613 DEBUG: ===================================
+2023-06-13 23:13:18,614 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:13:18,614 DEBUG: ===================================
+2023-06-13 23:13:18,614 DEBUG: ===================================
+2023-06-13 23:13:18,614 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:13:18,614 DEBUG: ===================================
+2023-06-13 23:13:18,615 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:13:18,615 DEBUG: ===================================
+2023-06-13 23:13:18,615 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:13:18,618 DEBUG: ===================================
+2023-06-13 23:13:18,618 DEBUG: Establishing a connection
+2023-06-13 23:13:18,620 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:13:18,620 DEBUG: ===================================
+2023-06-13 23:13:19,587 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:13:19,588 DEBUG: Sending start-up message
+2023-06-13 23:13:19,779 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:13:19,779 DEBUG: Algo:0
+2023-06-13 23:13:19,779 DEBUG: Password(extensible digest)
+2023-06-13 23:13:19,971 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:13:19,972 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:13:26,391 DEBUG: Timestamp inserted into last_timestamp table
+2023-06-13 23:13:26,391 DEBUG: ===================================
+2023-06-13 23:13:26,391 DEBUG: User provided connection arguments
+2023-06-13 23:13:26,391 DEBUG: ===================================
+2023-06-13 23:13:26,392 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:13:26,392 DEBUG: ===================================
+2023-06-13 23:13:26,392 DEBUG: ===================================
+2023-06-13 23:13:26,392 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:13:26,392 DEBUG: ===================================
+2023-06-13 23:13:26,392 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:13:26,393 DEBUG: ===================================
+2023-06-13 23:13:26,393 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:13:26,394 DEBUG: ===================================
+2023-06-13 23:13:26,394 DEBUG: Establishing a connection
+2023-06-13 23:13:26,394 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:13:26,394 DEBUG: ===================================
+2023-06-13 23:13:27,192 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:13:27,193 DEBUG: Sending start-up message
+2023-06-13 23:13:27,414 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:13:27,414 DEBUG: Algo:0
+2023-06-13 23:13:27,414 DEBUG: Password(extensible digest)
+2023-06-13 23:13:27,611 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:13:27,611 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:13:44,610 DEBUG: ===================================
+2023-06-13 23:13:44,610 DEBUG: User provided connection arguments
+2023-06-13 23:13:44,611 DEBUG: ===================================
+2023-06-13 23:13:44,611 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:13:44,611 DEBUG: ===================================
+2023-06-13 23:13:44,611 DEBUG: ===================================
+2023-06-13 23:13:44,611 DEBUG: Connection arguments following validation and IAM auth (if applicable)
+2023-06-13 23:13:44,612 DEBUG: ===================================
+2023-06-13 23:13:44,612 DEBUG: {'access_key_id': None, 'allow_db_user_override': False, 'app_id': None, 'app_name': 'amazon_aws_redshift', 'application_name': None, 'auth_profile': None, 'auto_create': False, 'client_id': None, 'client_protocol_version': 2, 'client_secret': None, 'cluster_identifier': None, 'credentials_provider': None, 'database_metadata_current_db_only': True, 'db_groups': [], 'db_name': 'dev', 'db_user': None, 'duration': 900, 'endpoint_url': None, 'force_lowercase': False, 'host': 'redshift-cluster-1.c4lh7ejvk9mj.eu-west-1.redshift.amazonaws.com', 'iam': False, 'iam_disable_cache': False, 'idp_host': None, 'idp_response_timeout': 120, 'idp_tenant': None, 'idpPort': 443, 'listen_port': 7890, 'login_url': None, 'max_prepared_statements': 1000, 'partner_sp_id': None, 'password': '***', 'port': 5439, 'preferred_role': None, 'principal': None, 'profile': None, 'region': None, 'replication': None, 'role_arn': None, 'role_session_name': None, 'secret_access_key': None, 'session_token': None, 'source_address': None, 'ssl': True, 'ssl_insecure': True, 'sslmode': 'verify-ca', 'tcp_keepalive': True, 'timeout': None, 'unix_sock': None, 'user_name': 'intern', 'web_identity_token': None, 'provider_name': None, 'scope': '', 'numeric_to_float': False, 'is_serverless': False, 'serverless_acct_id': None, 'serverless_work_group': None, 'group_federation': False, 'is_serverless_host': False, '_is_serverless': False}
+2023-06-13 23:13:44,612 DEBUG: ===================================
+2023-06-13 23:13:44,612 DEBUG: Cursor.paramstyle=named
+2023-06-13 23:13:44,615 DEBUG: ===================================
+2023-06-13 23:13:44,615 DEBUG: Establishing a connection
+2023-06-13 23:13:44,615 DEBUG: {'user': 'intern', 'database': 'dev', 'application_name': '__main__', 'replication': None, 'client_protocol_version': '2', 'driver_version': 'Redshift Python Driver 2.0.910', 'os_version': 'Windows-10-10.0.22621-SP0'}
+2023-06-13 23:13:44,615 DEBUG: ===================================
+2023-06-13 23:13:45,561 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:13:45,561 DEBUG: Sending start-up message
+2023-06-13 23:13:45,750 DEBUG: handle_AUTHENTICATION_REQUEST: AUTH_REQ_DIGEST
+2023-06-13 23:13:45,750 DEBUG: Algo:0
+2023-06-13 23:13:45,750 DEBUG: Password(extensible digest)
+2023-06-13 23:13:45,950 DEBUG: Server indicated EXTENDED_RESULT_METADATA transfer protocol will be used rather than protocol requested by client: BINARY
+2023-06-13 23:13:45,950 DEBUG: Cursor.paramstyle=format
+2023-06-13 23:13:57,210 DEBUG: Net worth t updated
